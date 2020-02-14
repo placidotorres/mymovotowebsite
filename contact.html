@@ -9,7 +9,13 @@
     <meta name="keywords" content="real estate, fresno, movoto">
     <title>Movoto Web design | Contact Us</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-
+    <script>
+      function Phone() {
+        var x = document.getElementById("details")
+        x.innerHTML = "559-824-6943";
+        setTimeout(function(){ x.innerText = ""}, 3000);
+      }
+    </script>
 </head>
 <body>
   <header>
@@ -19,9 +25,9 @@
   </div>
 <nav>
 <ul>
-<li ><a href="index.html">Home<a/></li>
-  <li><a href="whymovoto.html">why movoto<a/></li>
-  <li class="current"><a href="contact.html">contact us<a/></li>
+<li><a href="index.html">Home</a></li>
+  <li><a href="whymovoto.html">why movoto</a></li>
+  <li class="current"><a href="contact.html">contact us</a></li>
 
 </ul>
 </nav>
@@ -36,13 +42,26 @@
 
 <div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.2424890090288!2d-119.80688974869783!3d36.83666817984258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094680eea87be17%3A0x2f4af093487da2f8!2sMovoto%20Real%20Estate%20Fresno!5e0!3m2!1sen!2sus!4v1581048940231!5m2!1sen!2sus" width="900" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</div>
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccHf9Vb5fb_QlS7bep5UZMXCiFmqUD6ZnGuNgoXM26KdYMoQ/viewform?embedded=true" width="700" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
 
 
   <section id="main">
-    <div class="container">
+    <div id="contactinfo">
+      <p>
+        Contact info:<br>
+        Placido Torres<br>
+        Movoto Real Estate <br>
+        DRE#01785876<br>
+        <a href="https://www.movoto.com/agents/placido-torres-2/" class="a-link">My Movoto Website</a>
+        </p>
+      <button onclick="Phone()">Phone Number</button>
+      <p id="details"></p>
+    </div>
 
-
+    <div id="contact">
+      <p>Please fill out this form out,  if you would like help in finding the perfect home. I will respond today!</p> 
     </div>
 
   </section>
@@ -66,6 +85,8 @@
     <div class="copyright">
          <p>&copy;  All rights reserved to Placido Torres</p>
     </div>
+
+  
   </footer>
 
 </body>

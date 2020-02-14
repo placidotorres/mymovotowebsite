@@ -12,6 +12,7 @@ body{
   overflow:hidden;
   font-style:normal bold;
   position: relative;
+  font:bold;
 }
 
 
@@ -52,10 +53,12 @@ header ul {
   padding: 0;
 }
 
-
+ul {
+  list-style: none;
+}
 
   header li{
-    float: left;
+    float: left;00
     display: inline;
     padding: 0 20px 0 20px;
   }
@@ -176,14 +179,39 @@ float: inherit;
 
 }
 
-social-media{
+.social-media{
   float: none;
 }
 
 iframe{
   background-color:#C0C0C0;
   position:relative;
+  
+}
 
+#contact {
+  border: 1px solid black;
+  background-color: #e8491d;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 87px;
+  padding-left:1000px;
+  color: whitesmoke;
+ }
 
+#contactinfo {
 
+  background-color:#35424a;
+  float: left;
+  padding-left: 250px;
+  padding-right: 525px;
+  border: 1px solid black;
+  padding-bottom: 12px;
+  color:whitesmoke;
+  
+}
+
+.a-link {
+  text-decoration: none;
+  color: orangered;
 }
