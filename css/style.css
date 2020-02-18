@@ -89,10 +89,18 @@ ul {
     color: #e8491d;
     font-weight: bold;
     font-weight: bolder;
+    position: relative;
+    animation: mymove 4s infinite;
+    animation-iteration-count: initial;
+   }
+   #div3 {animation-timing-function: ease-in;}
 
+   @keyframes mymove {
+    from {left: 0px;}
+    to {left: 1550px;}
   }
 
-
+/* test */
   /* Showcase */
 
   #showcase{
@@ -206,7 +214,7 @@ iframe{
   padding-left: 250px;
   padding-right: 525px;
   border: 1px solid black;
-  padding-bottom: 12px;
+  padding-bottom: 34px;
   color:whitesmoke;
   
 }
@@ -215,3 +223,67 @@ iframe{
   text-decoration: none;
   color: orangered;
 }
+
+
+box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px;
+  font-size: 20px;
+  
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2{
+  color: #e8491d;
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+  font-size: 40px;
+  outline-color: red;
+  
+}
+
+.button1 {
+  background-color:#e8491d;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline-color: black;
+  }
